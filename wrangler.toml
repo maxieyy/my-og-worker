@@ -1,6 +1,7 @@
-name = "og-redirect-worker"
+name = "my-og-worker"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
 
-[triggers]
-routes = ["stream.devmaxwell.site/watch/*"]
+routes = [
+  { pattern = "stream.devmaxwell.site/watch/*", zone_name = "devmaxwell.site" }
+]
